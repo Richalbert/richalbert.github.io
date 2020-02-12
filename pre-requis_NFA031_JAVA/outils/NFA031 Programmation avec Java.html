@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html><head><title> NFA031 Programmation avec Java</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="NFA031%20Programmation%20avec%20Java_fichiers/style.css" type="text/css">
+</head>
+<body>
+
+<div class="top_navigation">
+<table>
+<tbody><tr>
+<td>
+<big> <b> NFA031 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b> </big>
+</td>
+
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=accueil"> accueil</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=cours"> cours</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=exercices"> exercices</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=TP"> TP</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=annales"> annales</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=projet"> projet</a></td>
+<td class="tabhigh"> <a class="tabhigh" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=index.php?tab=outils"> outils</a></td>
+<td class="tablow"> <a class="tablow" href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/nfa031/index.php?tab=secr%C3%A9tariat"> secrétariat</a></td>
+
+</tr></tbody></table></div>
+<div class="main_div">
+
+  <h1>Outils du cours</h1>
+
+
+<h2> Classe Terminal </h2>
+  <ul>
+    <li> Classe gérant les entrées/sorties clavier-écran: 
+         <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/common/Terminal.java">Terminal.java</a>
+    </li>
+  </ul>
+
+  <h2>Compilateur</h2>
+
+<p>
+Nous vous conseillons d'utiliser le compilateur JDK distribué par la
+société Oracle. Il est gratuit. Utilisez le JDK (JAVA Development Kit)
+en édition standard (SE). Attention, le runtime (JRE--JAVA Runtime
+Environment) ne suffit pas.</p>
+
+<p>
+Vous pouvez le trouver à l'adresse:
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"> 
+ http://www.oracle.com/technetwork/java/javase/downloads/index.html
+</a>. </p>
+
+<h2> Environnement de développement pour NFA031 </h2>
+
+<p> Pour le cours NFA031, nous vous conseillons d'utiliser l'environnement de 
+développement drjava qui est très simple à utiliser et qui ne nécessite même 
+pas d'installation. En revanche, il ne peut fonctionner que si le 
+compilateur jdk est installé.  
+</p>
+<p> Dr java peut être téléchargé sur le site <a href="http://www.drjava.org/">
+http://www.drjava.org </a> </p>
+
+<p> Un <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/videos/tuto-drjava.avi"> tutoriel vidéo </a> vous explique comment utiliser drjava (après avoir installé le compilateur). </p>
+
+  <h2>Autre solution: un éditeur</h2>
+  <p> Pour écrire vos programmes Java, vous pouvez éventuellement un 
+éditeur de texte. Si vous n'en avez pas, nous vous conseillons l'éditeur
+ JEdit que vous pouvez télécharger à l'adresse suivante (choisir la 
+version stable correspondant à votre système d'exploitation) <br>
+<a href="http://www.jedit.org/index.php?page=download">http://www.jedit.org/index.php?page=download</a>.   
+    </p>
+
+<h2> Environnement de développement pour NFA032 </h2>
+
+<p> Pour le cours NFA032, nous vous conseillons d'utiliser l'environnement de 
+développement <b> eclipse </b> qui est un environnement puissant. Vous 
+pouvez également utiliser drjava qui est plus simple à prendre en main. </p>
+<p> Vous pouvez télécharger la version <b> Eclipse IDE for Java EE Developers </b> sur le site <a href="http://eclipse.org/downloads/"> http://eclipse.org/downloads/ </a></p>
+
+
+<h2> Utilisation du compilateur dans une fenêtre de commande </h2>
+
+<p>
+En windows, pour pouvoir utiliser le compilateur dans une fenêtre de
+commande, il est utile de mettre à jour la variable d'environnement
+<b> PATH </b>. 
+</p><p>
+             Pour Windows suivre les instructions données dans le cours à distance :<br>
+             <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/htdocs/install-pas-a-pas.html">L'installation du JDK pas à pas</a><br>
+             <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/htdocs/path-pas-a-pas.html">Mise à jour du chemin d'exécution, pas à pas</a><br><br>
+             Pour windows 98 et Millenium : <br>
+             Modifier (ou ajouter) les variables d'environement dans le fichier autoexec.bat (sur C:\).<br>
+             <span class="focus">PATH=...;C:\jdk1.5.0\bin</span><br>
+             <span class="focus">JAVA_HOME=C:\jdk1.5.0</span>
+             <br><br>
+             Pour windows Vista: <br>A priori, la mise à jour de la variable
+	     d'environnement se fait automatiquement. Si ce n'est pas le cas,
+	     la procédure de mise à jour peut se faire manuellement de façon
+	     similaire à celle de windows XP.
+             <br><br>
+</p>
+
+
+             <h2>Tutoriels Vidéos</h2>
+<p>
+             Vous trouverez également ici des tutoriels vidéos expliquant les opérations à
+             effectuer pour développer des programmes Java sous Windows
+	     (XP): <br><br>
+
+             </p><ol>
+               <li><a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/swfdocs/download.html">téléchargement et installation</a> du <i><b>J</b>ava
+                 <b>D</b>evelopment <b>K</b>it</i> (JDK)</li>
+               <li>mise à jour de <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/swfdocs/path.html">la variable d'environnement</a></li>
+               <li><a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/swfdocs/jEdit.html">téléchargement et installation</a> de <a href="http://www.jedit.org/">jEdit</a></li>
+               <li>écriture, compilation et exécution d'un <a href="http://deptinfo.cnam.fr/Enseignement/CycleA/APA/swfdocs/compile.html">premier programme Java</a></li>
+             </ol>
+           
+         
+<p></p>
+
+</div>
+
+
+</body></html>

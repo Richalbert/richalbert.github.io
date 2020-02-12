@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>TP 1</TITLE>
+<META NAME="description" CONTENT="TP 1">
+<META NAME="keywords" CONTENT="tp1">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="tp1.css">
+
+</HEAD>
+
+<BODY >
+
+<P>
+<H1 ALIGN="CENTER">TP 1</H1>
+<DIV>
+
+<P ALIGN="CENTER"><STRONG>NFA031</STRONG></P>
+</DIV>
+
+<P>
+Pour les TP, vous allez travailler avec trois fenêtres simultanément: une
+fenêtre avec un navigateur pour afficher le sujet du TP, une avec l'éditeur,
+pour taper le programme, une fenêtre de commande (ou terminal de commandes)
+pour compiler et exécuter les programmes. 
+
+<P>
+
+<H1><A NAME="SECTION00010000000000000000">
+Préliminaires</A>
+</H1>
+
+<P>
+Creez un dossier pour y mettre vos programmes. Téléchargez le fichier
+<TT>Terminal.java</TT> sur le site web du cours et sauvez-le dans le dossier
+que vous venez de créer. Ouvrez l'éditeur de texte et gardez sa fenêtre
+ouverte. Ouvrez une fenêtre de commande et dedans, allez dans le dossier que
+vous avez créé (avec la commande cd, par exemple <code>cd "mes programmes"</code>).
+
+<P>
+
+<H1><A NAME="SECTION00020000000000000000">
+Exercice 1: compiler un programme</A>
+</H1>
+
+<P>
+Voici le texte d'un programme:
+
+<P>
+<PRE>
+public class BonjourNom{
+    public static void main(String[] args){
+        String lenom;
+        Terminal.ecrireString("Entrez votre nom: ");
+        lenom=Terminal.lireString();
+        Terminal.ecrireString("Bonjour ");
+        Terminal.ecrireStringln(lenom);
+    }
+}
+</PRE>
+
+<P>
+Tapez ce texte dans l'éditeur. Pour ce premier exercice, tapez-le à la main,
+sans utiliser le copier-coller. Sauvez-le programme dans le dossier que vous
+avez créé, en lui donnant comme nom <TT>BonjourNom.java</TT>. Attention à bien
+respecter les majuscules.
+
+<P>
+Compilez et exécutez ce programme. 
+Pour compiler, dans le terminal, tapez
+<code>javac BonjourNom.java</code>. Pour exécuter, tapez la commande 
+<code>javaBonjourNom</code>. 
+
+<P>
+S'il y a des erreurs à la compilation, il
+faut
+
+<OL>
+<LI>corriger les erreurs dans l'éditeur
+</LI>
+<LI>resauver le fichier
+</LI>
+<LI>le recompiler.
+</LI>
+</OL>
+
+<P>
+
+<H1><A NAME="SECTION00030000000000000000">
+Exercice 2</A>
+</H1>
+
+<P>
+Voici un programme qui convertit une longueur en pouces en une longueur en
+centimètres. 
+
+<P>
+<PRE>
+public class Conversion {
+    public static void main (String[] args) {
+        double pouces;
+        double centimetres;
+        Terminal.ecrireStringln("Longueur en pouces? ");
+        pouces = Terminal.lireDouble();
+        centimetres = pouces * 2.54;       
+        Terminal.ecrireString("La longueur en centimetres: ");
+        Terminal.ecrireDoubleln(centimetres);
+    }
+}
+</PRE>
+
+<P>
+
+<OL>
+<LI>Copiez ce programme par copier-coller (sélectionner à la souris, puis
+controle-c et controle-v). Le compiler et l'exécuter.
+</LI>
+<LI>modifiez ce programme pour qu'il convertisse une somme en euros en une
+somme en dollars avec le taux de change de 1 euro pour 1,30 dollars.
+</LI>
+<LI>modifiez ce programme pour qu'il lise au clavier le taux de change du
+jour. 
+</LI>
+</OL>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Francois Barthelemy
+2012-10-08
+</ADDRESS>
+</BODY>
+</HTML>
